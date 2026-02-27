@@ -10,7 +10,7 @@
     "node",
     "express"
   ],
-  "author": "Aya",
+  "author": " ",
   "license": "ISC",
   "description": "A little playlist maker",
   "type": "module",
