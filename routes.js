@@ -14,8 +14,10 @@ import playlist from './controllers/playlist.js';
 //Connects the route to the controller
 router.get('/', start.createView);
 router.get('/dashboard', dashboard.createView);
+router.post('/dashboard/addplaylist', dashboard.addPlaylist);
 router.get('/about', about.createView);
 router.get('/playlist/:id', playlist.createView);
+router.post('/playlist/:id/addsong', playlist.addSong);
 
 router.get('/error', (request, response) => response.status(404).end('Page not found.'));
 

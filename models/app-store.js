@@ -7,7 +7,7 @@ const appStore = {
 
   store: new JsonStore('./models/app-store.json', { info: {} }),
   collection: 'info',
-  array: 'employees',
+  array: 'creators',
 
   getAppInfo() {
     return this.store.findAll(this.collection);
