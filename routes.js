@@ -1,7 +1,7 @@
 'use strict';
 import logger from "./utils/logger.js";
 
-//Import the express package and create an Express router
+//Imports the express package and create an Express router
 import express from 'express'; 
 const router = express.Router();
 
@@ -13,13 +13,17 @@ import playlist from './controllers/playlist.js';
 
 //Connects the route to the controller
 router.get('/', start.createView);
+
 router.get('/dashboard', dashboard.createView);
 router.post('/dashboard/addplaylist', dashboard.addPlaylist);
+router.get('/dashboard/deleteplaylist/:id', dashboard.deletePlaylist);
+
 router.get('/about', about.createView);
+
 router.get('/playlist/:id', playlist.createView);
 router.post('/playlist/:id/addsong', playlist.addSong);
+router.get('/playlist/:id/deletesong/:songid', playlist.deleteSong);
 
 router.get('/error', (request, response) => response.status(404).end('Page not found.'));
 
-//The router is exported so it can be used elsewhere
 export default router;
