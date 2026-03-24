@@ -19,12 +19,16 @@ const dashboard = {
   },
 
   addPlaylist(request, response) {
-    const newPlayList = {
+    const timestamp = new Date();
+    const rating = parseInt(request.body.rating, 10);
+    const newPlaylist = {
       id: uuidv4(),
       title: request.body.title,
-      songs: [],
+	    date: timestamp,
+      rating: rating,
+      songs: []
     };
-    playlistStore.addPlaylist(newPlayList);
+    playlistStore.addPlaylist(newPlaylist);
     response.redirect('/dashboard');
   },
 

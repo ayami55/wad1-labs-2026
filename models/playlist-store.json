@@ -1,17 +1,35 @@
 {
   "playlistCollection": [
     {
+      "id": "01",
+      "title": "Beethoven Sonatas",
+      "rating": 3,
+      "songs": [
+        {
+          "id": "04",
+          "title": "Piano Sonata No. 3",
+          "artist": "Beethoven"
+        },
+        {
+          "id": "05",
+          "title": "Piano Sonata No. 7",
+          "artist": "Beethoven"
+        },
+        {
+          "id": "06",
+          "title": "Piano Sonata No. 10",
+          "artist": "Beethoven"
+        }
+      ]
+    },
+    {
       "id": "02",
       "title": "Beethoven Concertos",
+      "rating": 5,
       "songs": [
         {
           "id": "07",
           "title": "Piano Concerto No. 0",
-          "artist": "Beethoven"
-        },
-        {
-          "id": "08",
-          "title": "Piano Concerto No. 4",
           "artist": "Beethoven"
         },
         {
@@ -27,8 +45,10 @@
       "songs": []
     },
     {
-      "id": "66043d47-12b9-4b8b-9756-0bf1bf04411a",
-      "title": "Beethoven Works",
+      "id": "c851e15a-e7ce-4cd0-9f2f-94b5d4548a7e",
+      "title": "alx",
+      "date": "2026-03-24T23:13:24.804Z",
+      "rating": 4,
       "songs": []
     }
   ]
