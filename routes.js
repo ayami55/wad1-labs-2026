@@ -18,6 +18,8 @@ router.get('/', start.createView);
 router.get('/dashboard', dashboard.createView);
 router.post('/dashboard/addplaylist', dashboard.addPlaylist);
 router.get('/dashboard/deleteplaylist/:id', dashboard.deletePlaylist);
+router.get('/searchCategory', dashboard.createView);
+router.get('/sortData', dashboard.createView);
 
 router.get('/about', about.createView);
 
