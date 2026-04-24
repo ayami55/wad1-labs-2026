@@ -1,11 +1,16 @@
 {
   "playlistCollection": [
     {
-      "id": "4e5ea29e-9591-4fdf-b10c-386cf9aeacc4",
-      "title": "Homer’s new playlist",
-      "date": "2026-04-14T13:47:28.480Z",
-      "rating": 4,
-      "songs": []
+      "id": "4a51672f-02d2-4bde-ab08-c17ad21b153a",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "title": "New Playlist",
+      "rating": 3,
+      "songs": [],
+      "date": "2026-04-16T20:58:13.413Z",
+      "picture": {
+        "url": "https://res.cloudinary.com/dufghj1iv/image/upload/ar_5:7,c_auto/b_rgb:FC41CB/e_brightness:-5/main-sample.png",
+        "public_id": "yfoypncwlmg5nrqvowuz"
+      }
     }
   ]
 }
