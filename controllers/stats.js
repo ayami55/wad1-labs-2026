@@ -45,7 +45,8 @@ const stats = {
         displayFav: favTitles,
         longest: longestSize,
         longestTitles: longestPlaylistTitles,
-        displayNumUsers: numUsers
+        displayNumUsers: numUsers,
+        picture: userStore.picture
       };
 
       const viewData = {

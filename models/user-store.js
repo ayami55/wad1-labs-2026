@@ -20,8 +20,23 @@ const userStore = {
     return this.store.findOneBy(this.collection, (user => user.email === email));
   },
   
-  addUser(user) {
-    this.store.addCollection(this.collection, user);
+  async addUser(user, file, callback) {
+    try {
+      if(file){
+        const result = await this.store.addToCloudinary(file);
+
+        user.picture = {
+          url: result.secure_url,
+          public_id: result.public_id
+        };
+      }
+
+      this.store.addCollection(this.collection, user);
+      
+      callback();
+      } catch (error) {
+        callback(error);
+      }
   },
 
 };

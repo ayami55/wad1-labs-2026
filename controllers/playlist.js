@@ -4,6 +4,7 @@ import logger from '../utils/logger.js';
 import playlistStore from '../models/playlist-store.js';
 import { v4 as uuidv4 } from 'uuid';
 import accounts from './accounts.js';
+import userStore from '../models/user-store.js';
 
 const playlist = {
   createView(request, response) {
@@ -15,6 +16,7 @@ const playlist = {
       title: 'Playlist',
       singlePlaylist: playlistStore.getPlaylist(playlistId),
       fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
+      picture: userStore.picture
     };
 
     response.render('playlist', viewData);

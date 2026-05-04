@@ -3,6 +3,7 @@
 import logger from "../utils/logger.js";
 import appStore from "../models/app-store.js";
 import accounts from './accounts.js';
+import userStore from '../models/user-store.js';
 
 const start = {
   createView(request, response) {
@@ -14,6 +15,7 @@ const start = {
         title: "Welcome to the Playlist app!",
         info: appStore.getAppInfo(),
         fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
+        picture: userStore.picture
       };
       response.render('start', viewData);
     }

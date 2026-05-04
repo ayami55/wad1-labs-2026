@@ -4,6 +4,7 @@ import logger from "../utils/logger.js";
 import playlistStore from "../models/playlist-store.js";
 import accounts from './accounts.js';
 import { v4 as uuidv4 } from 'uuid';
+import userStore from '../models/user-store.js';
 
 const dashboard = {
   createView(request, response) {
@@ -46,6 +47,7 @@ const dashboard = {
         ratingSelected: request.query.sort === "rating",
         ascSelected: request.query.order === "asc",
         descSelected: request.query.order === "desc",
+        picture: userStore.picture
       };
       
       logger.info('about to render' + viewData.playlists);

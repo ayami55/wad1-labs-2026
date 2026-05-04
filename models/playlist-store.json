@@ -11,6 +11,24 @@
         "url": "https://res.cloudinary.com/dufghj1iv/image/upload/ar_3:4,c_auto/b_rgb:FC41CB/e_brightness:-5/main-sample.png",
         "public_id": "yfoypncwlmg5nrqvowuz"
       }
+    },
+    {
+      "id": "c7762f04-6e2b-4a4e-9370-97eac9baba70",
+      "userid": "dd3a0933-6701-4fb0-ae39-ee2a83fc6b78",
+      "title": "apple",
+      "rating": 2,
+      "songs": [
+        {
+          "id": "011589ca-2df5-43f1-b3a7-9ad64edf8307",
+          "title": "red",
+          "artist": "Alex"
+        }
+      ],
+      "date": "2026-05-04T17:58:03.542Z",
+      "picture": {
+        "url": "https://res.cloudinary.com/dufghj1iv/image/upload/v1777917484/hiayj5rioovrqvuddrt5.jpg",
+        "public_id": "hiayj5rioovrqvuddrt5"
+      }
     }
   ]
 }
