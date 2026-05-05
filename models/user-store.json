@@ -7,6 +7,28 @@
       "password": "secret",
       "id": "dd3a0933-6701-4fb0-ae39-ee2a83fc6b78",
       "picture": null
+    },
+    {
+      "firstName": "Ken",
+      "lastName": "Tanaka",
+      "email": "ken@example.com",
+      "password": "secret",
+      "id": "a94b4cb6-afec-4c24-a434-52af8f7caee8",
+      "picture": {
+        "url": "https://res.cloudinary.com/dufghj1iv/image/upload/v1777993241/nuagpygwpm7ofkzgdrmc.jpg",
+        "public_id": "nuagpygwpm7ofkzgdrmc"
+      }
+    },
+    {
+      "firstName": "Aoife",
+      "lastName": "Murphy",
+      "email": "aoife@example.com",
+      "password": "secret",
+      "id": "f7608ff5-e96d-4a92-9180-6bdc218851f8",
+      "picture": {
+        "url": "https://res.cloudinary.com/dufghj1iv/image/upload/v1777994520/d5z1dm6etq7hn8mcxt24.jpg",
+        "public_id": "d5z1dm6etq7hn8mcxt24"
+      }
     }
   ]
 }

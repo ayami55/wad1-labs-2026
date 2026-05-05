@@ -45,14 +45,14 @@ const stats = {
         displayFav: favTitles,
         longest: longestSize,
         longestTitles: longestPlaylistTitles,
-        displayNumUsers: numUsers,
-        picture: userStore.picture
+        displayNumUsers: numUsers
       };
 
       const viewData = {
         title: "Playlist App Statistics",
         stats: statistics,
-        fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName
+        fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
+        picture: userStore.picture
       };
 
       response.render("stats", viewData);

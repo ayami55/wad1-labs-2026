@@ -13,8 +13,8 @@ const about = {
           const viewData = {
             title: 'About the Playlist App',
             fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
-            employees: empStore.getEmpInfo(),
-            picture: userStore.picture
+            picture: userStore.picture,
+            employees: empStore.getEmpInfo()
           };
           response.render('about', viewData);
         }

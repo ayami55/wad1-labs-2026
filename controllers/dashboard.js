@@ -41,13 +41,13 @@ const dashboard = {
       const viewData = {
         title: "Playlist App Dashboard",
         fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
+        picture: userStore.picture,
         playlists: sortField ? sorted : playlists,
         search: searchTerm,
         titleSelected: request.query.sort === "title",
         ratingSelected: request.query.sort === "rating",
         ascSelected: request.query.order === "asc",
-        descSelected: request.query.order === "desc",
-        picture: userStore.picture
+        descSelected: request.query.order === "desc"
       };
       
       logger.info('about to render' + viewData.playlists);

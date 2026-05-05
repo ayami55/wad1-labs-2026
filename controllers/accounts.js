@@ -9,16 +9,21 @@ const accounts = {
 
   //index function to render index page
   index(request, response) {
+    const loggedInUser = accounts.getCurrentUser(request);
+
     const viewData = {
       title: 'Login or Signup',
+      picture: userStore.picture
     };
     response.render('index', viewData);
   },
   
   //login function to render login page
   login(request, response) {
+    const loggedInUser = accounts.getCurrentUser(request);
     const viewData = {
       title: 'Login to the Service',
+      picture: userStore.picture
     };
     response.render('login', viewData);
   },
@@ -31,9 +36,12 @@ const accounts = {
   
  //signup function to render signup page
   signup(request, response) {
+    const loggedInUser = accounts.getCurrentUser(request);
     const viewData = {
       title: 'Login to the Service',
+      picture: userStore.picture
     };
+
     response.render('signup', viewData);
   },
   
@@ -41,13 +49,14 @@ const accounts = {
   register(request, response) {
     const user = request.body;
     user.id = uuidv4();
+    
+    logger.info('registering' + user.email);
 
-    userStore.addUser(user, request.file, () => {
-      logger.info('registering' + user.email);
-      response.redirect('/');
+    userStore.addUser(user, request.files.picture, function() {
+      response.redirect("/");
     });
   },
-  
+
   //authenticate function to check user credentials and either render the login page again or the start page.
   authenticate(request, response) {
     const email = request.body.email;
