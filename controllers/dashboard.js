@@ -41,7 +41,7 @@ const dashboard = {
       const viewData = {
         title: "Playlist App Dashboard",
         fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
-        picture: userStore.picture,
+        picture: loggedInUser.picture,
         playlists: sortField ? sorted : playlists,
         search: searchTerm,
         titleSelected: request.query.sort === "title",

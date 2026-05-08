@@ -13,7 +13,7 @@ const accounts = {
 
     const viewData = {
       title: 'Login or Signup',
-      picture: userStore.picture
+      picture: loggedInUser.picture
     };
     response.render('index', viewData);
   },
@@ -23,7 +23,7 @@ const accounts = {
     const loggedInUser = accounts.getCurrentUser(request);
     const viewData = {
       title: 'Login to the Service',
-      picture: userStore.picture
+      picture: loggedInUser.picture
     };
     response.render('login', viewData);
   },
@@ -39,7 +39,7 @@ const accounts = {
     const loggedInUser = accounts.getCurrentUser(request);
     const viewData = {
       title: 'Login to the Service',
-      picture: userStore.picture
+      picture: loggedInUser.picture
     };
 
     response.render('signup', viewData);

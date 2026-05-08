@@ -52,7 +52,7 @@ const stats = {
         title: "Playlist App Statistics",
         stats: statistics,
         fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
-        picture: userStore.picture
+        picture: loggedInUser.picture
       };
 
       response.render("stats", viewData);
